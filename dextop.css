@@ -1,0 +1,101 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* nav bar start from here */
+.logo{
+	text-align:left;
+}
+.logo img {
+    height: 120px;
+    width: 60%;
+    margin-bottom: -13px;
+    margin-top: -13px;
+}
+.header{
+	text-align:right;
+	margin-top:1.5%;
+	
+}
+.header h1{
+	margin-right:130px;
+}
+.menu{
+	flex-direction:row;
+	justify-content:flex-end;
+	margin-top:1.5%;
+}
+.menu a{
+	background-color: #0e91bd;
+	margin:0px 2px;
+	padding:10px 10px;
+	transition: 1s;
+}
+.menu a:hover{
+	background-color: #03A9F4;
+}
+/* nav bar end from here */
+
+
+/* prolife starts from here */
+.top-logo{
+	right:100px
+}
+
+.bottom-logo{
+	margin-left:100px
+}
+
+.profile p {
+	
+text-align: center;
+width:50%;
+margin:10px auto 0px auto;
+}
+
+/* prolife ends from here */
+
+/* about me starts from here */
+.head-image {
+	margin-top:60px;
+}
+.head-image img{
+	width:270px;
+	height:270px;
+}
+.paragraph p{
+	text-align:left;
+	
+}
+.paragraph button{
+	margin:10px 0px;
+	padding:15px;
+}
+/* about me ends from here */
+
+/*proffesional experiece starts form here */
+.proffesional-experience{
+	padding:1% 5%;
+	
+	
+}
+
+
+/* proffesional experience ends from here */
+
+/* achivement starts from here */
+
+.contact button{
+	width:150px;
+}
+
+
+/* achivement ends from here */

@@ -1,0 +1,457 @@
+*{
+	
+	box-sizing:border-box;	
+	
+}
+body{
+margin:0;
+font-family: 'Montserrat', sans-serif;
+
+}
+/* nav bar start */
+.logo img {
+    border-radius: 100px;
+    width: 40%;
+    height: 200px;
+    margin-bottom: -25px;
+}
+
+.navbar{
+	text-align:center;
+	background-color: #0e91bd;
+	
+}
+.header h1 {
+    color: white;
+    font-size: 2.5rem;
+	margin: 0;
+	text-shadow: 4px 4px 4px black;
+}
+.menu{
+	display:flex;
+	flex-direction:column;
+}
+.menu a {
+	border-radius:10px;
+background: #03A9F4;
+	margin:10px 10px;
+padding:10px 0px;
+	
+color:white;
+	
+text-decoration:none;
+	
+font-size:1.5rem;
+transition: 1s;
+	
+text-transform:uppercase;
+}
+.menu a:hover{
+	background:rgb(21, 117, 196);
+	border-radius:10px;
+	
+	
+}
+[class*="col-"]{
+	float:left;
+	padding:10px;
+}
+[class*="col-"]{
+	width:100%;
+}
+
+.navbar::after{
+	
+	content:" ";
+	display:table;
+	clear:both;
+
+}
+/* nav bar end */
+
+
+/* prolife starts from here */
+.profile{
+	position: relative;
+	padding:130px 10px 0px 10px;
+	text-align:center;
+	
+}
+.top-logo{
+position: absolute;
+right:20px;
+width:110px;
+transition:2s;
+top: 20px;
+border-radius:20px
+}
+
+.bottom-logo {
+    width: 110px;
+    transition: 2s;
+    display: flex;
+	margin-left: 30px;
+	margin-bottom:5px;
+}
+.profile h1{
+	font-family: 'Satisfy', cursive;
+margin:15px 0px 0px 0px;
+font-size: 3rem;
+
+}
+	.profile p {
+		color:gray;
+		margin:10px 10px;
+		font-size: 1.5rem;
+	}
+
+	 .bottom-logo:hover{
+transform:rotate(360deg)
+	}
+
+	.top-logo:hover{
+		transform:rotate(360deg)
+			}
+	.profile:after{
+		content:"";
+		display:table;
+		clear: both;
+	}
+/* prolife ends from here */
+
+/* about me start from here */
+.about-me{
+	background:#0e91bd; 
+	text-align:center;
+	color:white;
+}
+.about-me h1{
+	text-shadow: 4px 4px 2px black;
+	margin-bottom:0px;
+	text-transform:uppercase;
+padding:20px 0px 10px 0px;
+}
+.hr-dotted{
+	margin-top:0px;
+	width: 120px;
+	border-bottom:3px dotted white;
+}
+.head-image img{
+	border:4px solid white;
+	width: 200px;
+	height:200px;
+	border-radius:50%;
+	margin-top:20px;
+}
+
+
+.paragraph{
+	font-size:1.2rem;
+	padding:10px;
+}
+.paragraph a{
+	color:white;
+	text-decoration:none;
+}
+.paragraph button{
+	background:rgb(11, 70, 19);
+	color:white;
+	font-size:1rem;
+	padding:10px;
+	border-radius:10px;
+	cursor:pointer;
+	margin:10px;
+	border:none;
+
+}
+.paragraph button:hover{
+	background:#0d721a;
+}
+.about-me::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+/* about me ends from here */
+
+/* expecience starts from here */
+.proffesional-experience{
+	padding:10px;
+    background: linear-gradient(45deg, #0000000f, #00000052);
+	
+}
+.card{
+	background:#a39e9e;
+	
+	border-radius: 10px;
+	transition: 0.3s;
+	height:600px;
+	padding:10px;
+}
+.card:hover {
+    box-shadow: 4px 4px 4px 0px #606a6b;
+}
+.card h2{
+	text-shadow: 2px 2px 3px  rgb(248, 248, 237);
+	text-align:center;
+	color:white;
+	background:rgb(34, 65, 42);
+	padding:10px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+.card-img{
+	text-align:center;
+	padding-top:10px;
+}
+
+.card-img img{
+	border-radius: 100%;
+width:100px;
+}
+ .list-of-experience {
+	padding: 0px 30px;
+	
+
+}
+
+.list-of-experience li{
+	margin: 30px 0px;
+	position:relative;
+	list-style: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	
+}
+ 
+.list-of-experience li::before{
+ position: absolute;
+	content:'';
+	width:100%;
+	height: 15px;
+	top:25px;
+	background-color:rgb(34, 45, 139);
+	opacity: .6;
+	border-radius:100px;
+}
+.list-of-experience li::after{
+	position: absolute;
+	   content:'';
+	   width:0%;
+	   height: 15px;
+	   left:0px;
+	   top:25px;
+	   background-color:rgb(7, 36, 165);
+	   opacity: 1;
+	   border-radius:100px;
+	   animation-duration:3s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-delay: 2s;
+
+}
+
+.list-of-experience li.html::after{
+	animation-name: html;
+	
+	
+}
+
+@keyframes html {
+	from{ width:0%}
+	to{ width:90%;}	
+
+	
+}
+
+/* HTML END HERE */
+
+.list-of-experience li.css::after{
+	animation-name: css;
+	
+	
+}
+
+@keyframes css {
+	from{ width:0%}
+	to{ width:85%;}	
+
+	
+}
+
+/* css end here */
+
+.list-of-experience li.boostrap::after{
+	animation-name: boostrap;
+	
+	
+}
+
+@keyframes boostrap {
+	from{ width:0%}
+	to{ width:80%;}	
+
+	
+}
+
+/* boostrap end here */
+
+
+.list-of-experience li.java::after{
+	animation-name: java;
+	
+	
+}
+
+@keyframes java{
+	from{ width:0%}
+	to{ width:88%;}	
+
+	
+}
+
+/* java end here */
+
+.list-of-experience li.javascript::after{
+	animation-name: javascript;
+	
+	
+}
+
+@keyframes javascript {
+	from{ width:0%}
+	to{ width:92%;}	
+
+	
+}
+
+/* javascript end here */
+
+.list-of-experience li.python::after{
+	animation-name: python;
+	
+	
+}
+
+@keyframes python {
+	from{ width:0%}
+	to{ width:95%;}	
+
+	
+}
+
+/* python end here */
+
+.list-of-experience li.mysql::after{
+	animation-name: mysql;
+	
+	
+}
+
+@keyframes mysql {
+	from{ width:0%}
+	to{ width:87%;}	
+
+	
+}
+
+
+.proffesional-experience::after{
+content:"";
+display:table;
+clear:both;
+}
+
+
+/* expecience ends from here */
+
+/* achivement starts from here */
+
+.achivement-contact{
+	padding:1% 7%;
+	background-color: cadetblue;
+	color:white;
+	text-align:center;
+	
+}
+
+.achivement h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px black;
+}
+
+.achivement-contact::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+.achivement ol{
+	text-align: left;
+	word-spacing:0px;
+}
+
+
+
+.contact h2 {
+	text-transform: uppercase;
+	text-shadow: 4px 4px 4px black;
+	font-weight: bold;
+
+}
+
+input,textarea{
+	margin:15px;
+	padding:10px;
+	width:100%;
+	border:none;
+	border-radius: 5px;
+    text-align:center;
+}
+
+textarea {
+    resize:none ;
+}
+
+.contact button{
+	margin-left:30px;
+	padding:10px 15px;
+	width:100px;
+	font-size: 1.2rem;
+	border:none;
+	border-radius: 10px;
+	background-color: rgb(44, 56, 56);
+	color:white;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+.contact-link h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px black;
+}
+
+.more-link button{
+width:50px;
+height: 50px;
+font-size: 30px;
+margin:10px;
+border:none;
+border-radius:50px;
+text-decoration: none;
+}
+
+/* achivement ends from here */
+
+/* footer satarts from here */
+
+.footer{
+	background:black;
+	color:white;
+	padding:10px;
+	text-align:center;
+	font-size:.8rem;
+}
+/* footer ends from here */
